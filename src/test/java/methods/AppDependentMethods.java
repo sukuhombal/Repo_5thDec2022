@@ -49,6 +49,8 @@ public class AppDependentMethods extends DriverScript{
 		}catch(Exception e) {
 			System.out.println("Exception in 'waitForElement()' method. " + e.getMessage());
 			return false;
+		}finally {
+			oWait = null;
 		}
 	}
 	
